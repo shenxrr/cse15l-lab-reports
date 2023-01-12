@@ -5,4 +5,4 @@ I am super excited for this course :)
 
 Here is a sample code
 ---------
-`Inline code` print("Hello World")
+`print("Hello World")` 

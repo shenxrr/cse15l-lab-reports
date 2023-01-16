@@ -25,7 +25,7 @@ Part 3: Trying some commands
 Now it's time to run some commands on your terminal.
 `cd ~`
 > To Home directory
-'cd'
+`cd`
 > To Home directory
 `ls`
 > To list files in current directory
@@ -37,4 +37,5 @@ Now it's time to run some commands on your terminal.
 > Print current working directory
 Here is a screenshot of possible outputs you can get:
 <img width="835" alt="Screen Shot 2023-01-16 at 2 26 21 PM" src="https://user-images.githubusercontent.com/97763875/212774376-32ccc795-f0f9-41fe-8a5d-f4d1e2c19ba8.png">
+
 Congratulations! Now you have learned how to instill Visual Studio Code, connecting to remote server, and run some commands. 

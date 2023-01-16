@@ -11,4 +11,9 @@ Visual Studio Code is successfully installed and you are all set!
 
 Part 2: Connect to remote server
 ---------
-After you have installed Visual Studio Code, 
+After you have installed Visual Studio Code, We will try to remotely connect to server. Make sure you have installed git if you are on Windows.
+
+First, we should open the terminal on VSCode using Ctrl or Command + \`, or use the Terminal → New Terminal menu option. 
+After setting up the password, we type `$ssh cs15lwi23zz@ieng6.ucsd.edu` to terminal with zz replaced by your course account.
+It will prompt you to enter your password. When you have entered correctly, you will see the messages:
+<img width="563" alt="Screen Shot 2023-01-16 at 2 12 57 PM" src="https://user-images.githubusercontent.com/97763875/212773182-7f9d41bc-a490-42d5-b086-a6dd1bcd38df.png">

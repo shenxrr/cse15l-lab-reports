@@ -1,48 +1,26 @@
-Lab Report 1 - VSCode installationa and Remotely connecting
+
+Lab Report 2 - Servers and Bugs
 =========
-In the lab report, I will go through the process of installing Visual Studio Code, Connecting to remote server, and running some commands.
 
-Part 1: Visual Studio Code
+Part 1: StringServer
 ---------
-Go to the Visual Studio Code website https://code.visualstudio.com/, follow the instructions to download and install it on your computer.
-After installation, you should open Visual Studio Code and see the window as below: 
-![Image](https://user-images.githubusercontent.com/97763875/211948568-b5439135-a12e-4b32-a585-6f5679438437.png)
-Visual Studio Code is successfully installed and you are all set!
+Here is how I implemented StringServer.java
+<img width="894" alt="Screen Shot 2023-01-30 at 11 00 53 PM" src="https://user-images.githubusercontent.com/97763875/215689381-5dbadb29-d66b-453e-b964-e75e8e41433c.png">
 
-Part 2: Connect to remote server
+Part 2: Debug
 ---------
-After you have installed Visual Studio Code, We will try to remotely connect to server. Make sure you have installed git if you are on Windows.
+The code for tests:
 
-First, we should open the terminal on VSCode using Ctrl or Command + \`, or use the Terminal → New Terminal menu option. 
-After setting up the password, we type `$ssh cs15lwi23zz@ieng6.ucsd.edu` to terminal with zz replaced by your course account.
+<img width="449" alt="Screen Shot 2023-01-30 at 11 04 06 PM" src="https://user-images.githubusercontent.com/97763875/215689941-5cddf2f7-0cd3-4025-a184-90246de92837.png">
+The first one did not cause an error, but the second one is a failure inducing input
+The corresponding output:
 
-It will prompt you to enter your password. When you have entered correctly, you will see the messages:
-<img width="563" alt="Screen Shot 2023-01-16 at 2 12 57 PM" src="https://user-images.githubusercontent.com/97763875/212773182-7f9d41bc-a490-42d5-b086-a6dd1bcd38df.png">
-This means you have successfully connected to remote server. 
+<img width="568" alt="Screen Shot 2023-01-30 at 11 05 18 PM" src="https://user-images.githubusercontent.com/97763875/215690075-d1b278a8-0907-4ff2-83b5-f8607e741e7f.png">
 
-Part 3: Trying some commands
+Here is how I fixed it:
+<img width="527" alt="Screen Shot 2023-01-30 at 11 06 55 PM" src="https://user-images.githubusercontent.com/97763875/215690382-a40f7a04-62ed-4585-aa7b-790d92ec41d7.png">
+
+
+Part 3: Feedbacks
 ---------
-Now it's time to run some commands on your terminal.
-
-`cd ~`
-> To Home directory
-
-`cd`
-> To Home directory
-
-`ls`
-> To list files in current directory
-
-`ls -a`
-> To list all files including hidden files
-
-`ls -lat`
-> To list all files sorted by date
-
-`pwd`
-> Print current working directory
-
-Here is a screenshot of possible outputs you can get:
-<img width="835" alt="Screen Shot 2023-01-16 at 2 26 21 PM" src="https://user-images.githubusercontent.com/97763875/212774376-32ccc795-f0f9-41fe-8a5d-f4d1e2c19ba8.png">
-
-Congratulations! Now you have learned how to instill Visual Studio Code, connecting to remote server, and run some commands. 
+I have learned a lot from this course. I did not know how to publish a page on github and edit it using .md. I found it a very useful skills to have. I also learned several terminal commands that I didi not know before. I also learned each component of an URL. In addition, I am more clear of how to connect to a remote server. Overall, this class is very rewarding.  

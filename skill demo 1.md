@@ -21,3 +21,11 @@ Start Server:
 `javac Server.java FileServer.java `
 
 `java FileServer`
+
+`java FileServer 1206 ../skill-demo1-data`
+
+`http://ieng6-202:1206/`
+
+`http://ieng6-202:1206/search?q=Bahamas-History`
+
+`http://ieng6-202:1206/search?q=Bahamas`

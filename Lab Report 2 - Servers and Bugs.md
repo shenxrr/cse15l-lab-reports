@@ -5,6 +5,9 @@ Part 1: StringServer
 ---------
 Here is how I implemented StringServer.java
 <img width="894" alt="Screen Shot 2023-01-30 at 11 00 53 PM" src="https://user-images.githubusercontent.com/97763875/215689381-5dbadb29-d66b-453e-b964-e75e8e41433c.png">
+<img width="428" alt="Screen Shot 2023-02-07 at 6 38 29 PM" src="https://user-images.githubusercontent.com/97763875/217414642-5d5b47bf-e155-46d1-8971-3a3c1afc9021.png">
+<img width="355" alt="Screen Shot 2023-02-07 at 6 39 40 PM" src="https://user-images.githubusercontent.com/97763875/217414803-31185e50-00f5-48a8-83d9-598427149a2d.png">
+<img width="323" alt="Screen Shot 2023-02-07 at 6 39 51 PM" src="https://user-images.githubusercontent.com/97763875/217414839-e6eb637e-4142-4406-91fc-728bc9989d0b.png">
 
 Part 2: Debug
 ---------

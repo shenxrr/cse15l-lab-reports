@@ -15,3 +15,9 @@ Find how many txt files:
 find the file in the data directory that contains the string "Lucayans":
 
 `grep -rl "Lucayans" written_2`
+
+Start Server:
+
+`javac Server.java FileServer.java `
+
+`java FileServer`

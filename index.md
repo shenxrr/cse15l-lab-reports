@@ -4,7 +4,7 @@ Lab Report 2 - Servers and Bugs
 
 Part 1: StringServer
 ---------
-Here is how I implemented StringServer.java:
+Here is how I implemented StringServer.java: 
 
 <img width="894" alt="Screen Shot 2023-01-30 at 11 00 53 PM" src="https://user-images.githubusercontent.com/97763875/215689381-5dbadb29-d66b-453e-b964-e75e8e41433c.png">
 

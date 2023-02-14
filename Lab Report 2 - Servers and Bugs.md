@@ -20,15 +20,47 @@ Part 2: Debug
 ---------
 The code for tests:
 
-<img width="449" alt="Screen Shot 2023-01-30 at 11 04 06 PM" src="https://user-images.githubusercontent.com/97763875/215689941-5cddf2f7-0cd3-4025-a184-90246de92837.png">
+
+     @Test 
+     public void testReverseInPlace() {
+     int[] input1 = { 3 };
+     ArrayExamples.reverseInPlace(input1);
+     assertArrayEquals(new int[]{ 3 }, input1);
+     }
+     
+     @Test 
+     public void testReverseInPlace1() {
+     int[] input2 = { 1,2,3 };
+     ArrayExamples.reverseInPlace(input2);
+     assertArrayEquals(new int[]{ 3,2,1 }, input2);
+     }
+
+
 The first one did not cause an error, but the second one is a failure inducing input
 The corresponding output:
 
 <img width="568" alt="Screen Shot 2023-01-30 at 11 05 18 PM" src="https://user-images.githubusercontent.com/97763875/215690075-d1b278a8-0907-4ff2-83b5-f8607e741e7f.png">
 
-Here is how I fixed it:
-<img width="527" alt="Screen Shot 2023-01-30 at 11 06 55 PM" src="https://user-images.githubusercontent.com/97763875/215690382-a40f7a04-62ed-4585-aa7b-790d92ec41d7.png">
+Here is the buggy code:
 
+    static void reverseInPlace(int[] arr) {
+      for(int i = 0; i < arr.length; i += 1) {
+        arr[i] = arr[arr.length - i - 1];
+      }
+    }
+  
+It contains bug because it did not save the number being reversed to a temp variable.
+
+Here is how I fixed it:
+
+    static void reverseInPlace(int[] arr) {
+      for(int i = 0; i < arr.length/2; i += 1) {
+        int temp = arr[arr.length - 1 - i];
+        arr[arr.length - i - 1] = arr[i];
+        arr[i] = temp;
+      }
+    }
+    
 
 Part 3: Feedbacks
 ---------

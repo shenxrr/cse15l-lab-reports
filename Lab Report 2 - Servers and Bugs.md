@@ -1,3 +1,4 @@
+
 Lab Report 2 - Servers and Bugs
 =========
 
@@ -68,3 +69,4 @@ Here is how I fixed it:
 Part 3: Feedbacks
 ---------
 I have learned a lot from this course. I did not know how to publish a page on github and edit it using .md. I found it a very useful skills to have. I also learned several terminal commands that I didi not know before. I also learned each component of an URL. In addition, I am more clear of how to connect to a remote server. Overall, this class is very rewarding.  
+

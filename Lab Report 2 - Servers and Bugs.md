@@ -44,6 +44,7 @@ The corresponding output:
 
 Here is the buggy code:
 
+
     static void reverseInPlace(int[] arr) {
       for(int i = 0; i < arr.length; i += 1) {
         arr[i] = arr[arr.length - i - 1];
@@ -53,6 +54,7 @@ Here is the buggy code:
 It contains bug because it did not save the number being reversed to a temp variable.
 
 Here is how I fixed it:
+
 
     static void reverseInPlace(int[] arr) {
       for(int i = 0; i < arr.length/2; i += 1) {

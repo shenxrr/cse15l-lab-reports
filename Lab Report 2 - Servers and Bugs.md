@@ -51,7 +51,7 @@ Here is the buggy code:
       }
     }
   
-It contains bug because it did not save the number being reversed to a temp variable.
+It contains bug because it did not save the number being reversed to a temp variable. I have fixed it in the new version
 
 Here is how I fixed it:
 

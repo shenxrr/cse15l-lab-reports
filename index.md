@@ -1,71 +1,133 @@
-
-Lab Report 2 - Servers and Bugs
+Lab Report 3 - Command lind options for grep
 =========
 
-Part 1: StringServer
+The `grep -r` command reads all files under each directory, recursively. 
 ---------
-Here is how I implemented StringServer.java: 
 
-<img width="894" alt="Screen Shot 2023-01-30 at 11 00 53 PM" src="https://user-images.githubusercontent.com/97763875/215689381-5dbadb29-d66b-453e-b964-e75e8e41433c.png">
+Source: https://en.wikibooks.org/wiki/Grep
 
-Here are the screenshots of using /add-message:
-the method I used here is the else if statement. param[0] is the text I've entered, which is 'hello'
+Example 1:
 
-<img width="428" alt="Screen Shot 2023-02-07 at 6 38 29 PM" src="https://user-images.githubusercontent.com/97763875/217414642-5d5b47bf-e155-46d1-8971-3a3c1afc9021.png">
+`grep -r "Waikiki" ./written_2`
 
-Here is the second message I added. I used the else if statement again. And this time, it created a new line, adding my second message to the new line. 
+`./written_2/travel_guides/berlitz1/HistoryHawaii.txt:        Waikiki, that organized tourism took hold. Steamships of the Matson
+./written_2/travel_guides/berlitz1/HistoryHawaii.txt:        military base, was ruled by martial law. The Waikiki hotels housed
+./written_2/travel_guides/berlitz1/HistoryHawaii.txt:        Canada, and Australia from Waikiki, millions fell under the spell of a
+./written_2/travel_guides/berlitz1/HistoryHawaii.txt:        right on Waikiki Beach; Sheraton and other hotel chains followed. Among
+./written_2/travel_guides/berlitz1/WhereToHawaii.txt:        Oahu: Waikiki Beach is the tourist center of the islands,
+./written_2/travel_guides/berlitz1/WhereToHawaii.txt:        Waikiki (see page 28).
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        Aston Waikiki Sunset $$$ 229 Paoakalani Avenue, Honolulu, HI
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        kitchens. Lanais afford views of the Diamond Head end of Waikiki Beach.
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        <www.hawaiianvillage.hilton.com>. Waikiki’s larg­est resort
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        Hyatt Regency Waikiki $$$–$$$$ 2424 Kalakaua Avenue,
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        Head end of Waikiki’s shopping avenue (across the street from the
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        best stretches of Waikiki oceanfront, is more deluxe than most
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        the Diamond Head end of Waikiki, are a block from Kuhio Beach. Rooms
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        <www.royal-hawaiian.com>. Waikiki’s “Pink Palace,” built by the
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        sets the tone for Waikiki’s most charming historic hotel, which opened
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        Waikiki Beach, but a few steps from the heart of the Waikiki shopping
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        Sheraton Waikiki $$$–$$$$ 2255 Kalakaua Avenue, Honolulu,
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        largest of Sheraton’s four Waikiki beachfront hotels, with the most`
 
-<img width="355" alt="Screen Shot 2023-02-07 at 6 39 40 PM" src="https://user-images.githubusercontent.com/97763875/217414803-31185e50-00f5-48a8-83d9-598427149a2d.png">
+This command searches for the string "Waikiki" in all files and directories under ./written_2.
 
+Example 2:
 
-Part 2: Debug
+`grep -r "Waikiki" --include "*.txt" ./written_2`
+
+`./written_2/travel_guides/berlitz1/HistoryHawaii.txt:        Waikiki, that organized tourism took hold. Steamships of the Matson
+./written_2/travel_guides/berlitz1/HistoryHawaii.txt:        military base, was ruled by martial law. The Waikiki hotels housed
+./written_2/travel_guides/berlitz1/HistoryHawaii.txt:        Canada, and Australia from Waikiki, millions fell under the spell of a
+./written_2/travel_guides/berlitz1/HistoryHawaii.txt:        right on Waikiki Beach; Sheraton and other hotel chains followed. Among
+./written_2/travel_guides/berlitz1/WhereToHawaii.txt:        Oahu: Waikiki Beach is the tourist center of the islands,
+./written_2/travel_guides/berlitz1/WhereToHawaii.txt:        Waikiki (see page 28).
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        Aston Waikiki Sunset $$$ 229 Paoakalani Avenue, Honolulu, HI
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        kitchens. Lanais afford views of the Diamond Head end of Waikiki Beach.
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        <www.hawaiianvillage.hilton.com>. Waikiki’s larg­est resort
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        Hyatt Regency Waikiki $$$–$$$$ 2424 Kalakaua Avenue,
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        Head end of Waikiki’s shopping avenue (across the street from the
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        best stretches of Waikiki oceanfront, is more deluxe than most
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        the Diamond Head end of Waikiki, are a block from Kuhio Beach. Rooms
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        <www.royal-hawaiian.com>. Waikiki’s “Pink Palace,” built by the
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        sets the tone for Waikiki’s most charming historic hotel, which opened
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        Waikiki Beach, but a few steps from the heart of the Waikiki shopping
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        Sheraton Waikiki $$$–$$$$ 2255 Kalakaua Avenue, Honolulu,
+./written_2/travel_guides/berlitz1/HandRHawaii.txt:        largest of Sheraton’s four Waikiki beachfront hotels, with the most`
+
+This command searches for the string "Waikiki" only in files with the .txt extension under ./written_2.
+
+The `grep - w` command searches for the files that exactly match this word.
 ---------
-The code for tests:
 
+Source: https://linuxcommand.org/lc3_man_pages/grep1.html
 
-     @Test 
-     public void testReverseInPlace() {
-     int[] input1 = { 3 };
-     ArrayExamples.reverseInPlace(input1);
-     assertArrayEquals(new int[]{ 3 }, input1);
-     }
-     
-     @Test 
-     public void testReverseInPlace1() {
-     int[] input2 = { 1,2,3 };
-     ArrayExamples.reverseInPlace(input2);
-     assertArrayEquals(new int[]{ 3,2,1 }, input2);
-     }
+Example 1:
 
+`grep -w "Honululu"  ./written_2.`
 
-The first one did not cause an error, but the second one is a failure inducing input
-The corresponding output:
+`grep: ./written_2.: No such file or directory`
 
-<img width="568" alt="Screen Shot 2023-01-30 at 11 05 18 PM" src="https://user-images.githubusercontent.com/97763875/215690075-d1b278a8-0907-4ff2-83b5-f8607e741e7f.png">
+It searches for the exact word 'Honululu' in all files under the ./written_2. There is no such file because I spelt the word wrong.
 
-Here is the buggy code:
+Example 2:
 
+`grep -w "Honolulu" ./written_2/*`
 
-    static void reverseInPlace(int[] arr) {
-      for(int i = 0; i < arr.length; i += 1) {
-        arr[i] = arr[arr.length - i - 1];
-      }
-    }
-  
-It contains bug because it did not save the number being reversed to a temp variable. I have fixed it in the new version
+`grep: ./written_2/non-fiction: Is a directory
+grep: ./written_2/travel_guides: Is a directory`
 
-Here is how I fixed it:
+This searches for the word "Honolulu" in all files under the ./written_2 directory. 
 
-
-    static void reverseInPlace(int[] arr) {
-      for(int i = 0; i < arr.length/2; i += 1) {
-        int temp = arr[arr.length - 1 - i];
-        arr[arr.length - i - 1] = arr[i];
-        arr[i] = temp;
-      }
-    }
-    
-
-Part 3: Feedbacks
+The `grep -e` command searches for patterns in files and directories under the directory
 ---------
-I have learned a lot from this course. I did not know how to publish a page on github and edit it using .md. I found it a very useful skills to have. I also learned several terminal commands that I didi not know before. I also learned each component of an URL. In addition, I am more clear of how to connect to a remote server. Overall, this class is very rewarding.  
+Source: https://chat.openai.com/chat
+
+Example 1:
+
+`grep -e "lagoons" ./written_2/*`
+
+`grep: ./written_2/non-fiction: Is a directory
+grep: ./written_2/travel_guides: Is a directory`
+
+This command searches for the string "lagoon" in all files under the "written_2" directory and prints the lines that match.
+
+Example 2:
+
+`grep -e "lagoons" ./written_2/*.txt`
+
+`grep: ./written_2/*.txt: No such file or directory`
+
+This command searches for the string "lagoons" in all text files under the "written_2" directory and prints the lines that match.
+
+The `grep -n` command searches for the prefix each line of output with the line number within its input file.
+---------
+Source: https://chat.openai.com/chat
+
+Example 1:
+
+`grep -n "Honolulu" ./written_2/travel_guides/berlitz1/HandRHawaii.txt`
+
+`6:        Oahu (Including Honolulu)
+7:        Aston Waikiki Sunset $$$ 229 Paoakalani Avenue, Honolulu, HI
+13:        Halekulani $$$$ 2199 Kalia Road, Honolulu, HI 96815; Tel.
+21:        Hilton Hawaiian Village $$$–$$$$ 2005 Kalia Road, Honolulu,
+29:        Honolulu, HI 96815; Tel. (808) 923-1234 or (800) 233-1234; fax (808)
+40:        half-hour drive of Honolulu. 387 rooms.
+42:        Honolulu, HI 96816; Tel. (808) 739-8888 or (800) 367-2525; fax (808)
+48:        Outrigger Reef $$$ 2169 Kalia Road, Honolulu, HI 96815; Tel.
+54:        Pacific Beach Hotel $$$ 2490 Kalakaua Avenue,, Honolulu, HI
+59:        Royal Hawaiian $$$$ 2259 Kalakaua Avenue, Honolulu, HI
+65:        Honolulu, HI 96815; Tel. (808) 922-3111 or (800) 325-3535; fax (808)
+74:        Honolulu, HI 96815; Tel. (808) 922-5811 or (800) 325-3535; fax (808)
+79:        Sheraton Waikiki $$$–$$$$ 2255 Kalakaua Avenue, Honolulu,
+`
+
+This command will search for the Honululu in all files and directories under ./written_2 and will print each matching line along with its line number and the name of the file or directory it was found in.
+
+Example 2:
+
+`grep -n "(808) 922-1233" ./written_2/travel_guides/berlitz1/HandRHawaii.txt`
+
+`55:        96815; Tel. (808) 922-1233 or (800) 367-6060; fax (808) 922-0129;`
+
+This command will search for (808) 922-1233 in all files and directories under ./written_2 and will print each matching line along with its line number and the name of the file or directory it was found in.
